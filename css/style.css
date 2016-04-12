@@ -1,9 +1,13 @@
 body {
   font-family: sans-serif;
+  text-align: center;
 }
 
 h1 {
   color: #e6e6e6;
+  font-family: 'Bangers', cursive;
+  font-size: 4em;
+  letter-spacing: 0.1em
 }
 
 .left {
@@ -13,7 +17,7 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #4C4C4C;
+  background-color: #203240;
 }
 
 .right {
@@ -22,36 +26,45 @@ h1 {
   height: 100%;
   top: 0;
   right: 0;
-  background-color: #E6E6E6;
+  background: url(../img/stars.png) repeat 0 0;
+
+}
+
+div.top-space {
+  height: 25%;
 
 }
 
 .btn {
-  display: block;
-  width: 20%;
+  display: inline-block;
+  width: 25%;
+  padding: 2em 4em;
   text-decoration: none;
-  background-color: #2F7FB8;
+  text-transform: uppercase;
+  background-color: #B73739;
   color: #ddd;
-  padding: .5em 1em;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background-color ease-in .1s;
 }
 
 .btn:hover {
-  background-color: #235B84;
+  background-color: #C44649;
 }
 
 .rocket {
   position: absolute;
   left: 50%;
-  bottom: 2em;
-  width: 4em;
-  height: 12em;
-  background-color: #2F7FB8;
+  bottom: 1em;
+  width: 261px;
+  height: 418px;
+  margin-left: -130.5px;
+  background: url(../img/rocket_state1.png);
   transition: bottom ease-out 2s;
 
 }
+
+
 
 body.l-state3 .rocket,
 body.l-state4 .rocket {
@@ -60,11 +73,11 @@ body.l-state4 .rocket {
 
 .ground {
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 2.5em;
-  background-color: #008000;
+  height: 60px;
+  background: url(../img/ground.png) repeat 0 0;
   
 }
 
