@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
@@ -11,7 +11,6 @@ h1 {
 }
 
 .left {
-  padding: 2em 2em; 
   position: fixed;
   width: 50%;
   height: 100%;
@@ -30,22 +29,23 @@ h1 {
 
 }
 
-div.top-space {
-  height: 25%;
+div.header {
+  padding-top: 1.5em;
+  padding-bottom: 3em;
 
 }
 
 .btn {
   display: inline-block;
   width: 25%;
-  padding: 2em 4em;
+  padding: 1.5em 2em;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #B73739;
   color: #ddd;
   text-align: center;
   border-radius: 10px;
-  transition: background-color ease-in .1s;
+  transition: background-color ease-in-out .5s;
 }
 
 .btn:hover {
@@ -55,20 +55,36 @@ div.top-space {
 .rocket {
   position: absolute;
   left: 50%;
-  bottom: 1em;
-  width: 261px;
-  height: 418px;
+  bottom: -2em;
+  width: 262px;
+  height: 460px;
   margin-left: -130.5px;
-  background: url(../img/rocket_state1.png);
-  transition: bottom ease-out 2s;
+  background: url(../img/rocket_state1.png) no-repeat 0 0;
+  transition: bottom ease-in 2s;
 
 }
 
+body.l-state1 .rocket{
+  transition: none;
+}
+
+body.l-state2 .rocket {
+  background: url(../img/rocket_state2.png) no-repeat 0 0;
+}
 
 
 body.l-state3 .rocket,
 body.l-state4 .rocket {
-  bottom: 1000px;
+  bottom: 800px;
+  background: url(../img/rocket_state3.png) no-repeat 0 0;
+}
+
+body.l-state5 .rocket {
+  width: 577px;
+  height: 579px;
+  margin-left: -288.5px;
+  background: url(../img/boom.png) no-repeat 0 0;
+  bottom: 4em;
 }
 
 .ground {
