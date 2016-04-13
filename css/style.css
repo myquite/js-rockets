@@ -45,7 +45,7 @@ div.header {
   color: #ddd;
   text-align: center;
   border-radius: 10px;
-  transition: background-color ease-in-out .5s;
+  transition: background-color ease-in-out 2s;
 }
 
 .btn:hover {

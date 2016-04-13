@@ -34,6 +34,6 @@ var changeState = function (state) {
         }
 
 
-      }, 2000);
+      }, 1000);
   };
 }
